@@ -14,7 +14,7 @@ class PHP
 	private static $user_id = ''; # set user ID
 	private static $key = ''; # set key
 	private static $ssheet = ''; # set spreadsheet ID
-	private static $endpoint = 'https://sheetcms.in';
+	private static $endpoint = 'https://sheetcms.in/7';
 	
 	function __construct($user = null, $key = null)
 	{
@@ -25,6 +25,11 @@ class PHP
 		if (isset($key)) {
 			self::$key = $key;
 		}
+	}
+
+	public function setEP($value)
+	{
+		self::$endpoint = $value;
 	}
 
 	public function setSheet($ssheet)
@@ -62,6 +67,4 @@ class PHP
 			return $getSheet;
 		}
 	}
-
-
 }
