@@ -1,0 +1,19 @@
+{
+    "name": "sheetcms/php",
+    "description": "A PHP library to access SheetCMS API",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Donnie Ashok",
+            "email": "donnie@legalify.in"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "SheetCMS\\" : "src/"
+        }
+    }
+}
