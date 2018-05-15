@@ -46,6 +46,7 @@ class PHP
 				self::$user_id.'/'.
 				self::$key.'/'.
 				self::$ssheet.'/'.
+				# if array then implode with commas
 				(is_array($wsheet)?implode(',', $wsheet):$wsheet).'/1/'
 			), 
 			true
@@ -60,6 +61,7 @@ class PHP
 					self::$user_id.'/'.
 					self::$key.'/'.
 					self::$ssheet.'/'.
+					# if array then implode with commas
 					(is_array($wsheet)?implode(',', $wsheet):$wsheet).'/1/'
 				), 
 				true
